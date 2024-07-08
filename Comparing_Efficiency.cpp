@@ -76,7 +76,7 @@ int main() {
             copyArray(arrRandom[j], temp, ARRAY_SIZE);
             time += getTime(sortFuncs[i], temp, ARRAY_SIZE);
         }
-        printf("  Random arrays: %.4f seconds (%.1f ms)\n", time / 10.0, time * 100);
+        printf("  Random arrays: %.4f seconds (%.1f ms)\n", time / RANDOM_DATASETS, time / RANDOM_DATASETS * 1000);
 
         copyArray(arrNearlySorted, temp, ARRAY_SIZE);
         time = getTime(sortFuncs[i], temp, ARRAY_SIZE);
